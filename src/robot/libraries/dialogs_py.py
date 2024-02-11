@@ -167,6 +167,9 @@ class SelectionDialog(TkDialog):
 
     def _get_value(self) -> str:
         return self.widget.get(self.widget.curselection())
+    
+    def _get_default(self) -> str:
+        return self.widget[0]
 
 
 class MultipleSelectionDialog(TkDialog):
